@@ -1,11 +1,13 @@
 
 import './App.css';
+import MainCard from './components/main-card';
 
 function App() {
   return (
     <div className="App">
-     <h1>Oscar Anillo</h1>
-     <p>Web UI Developer</p>
+      <div className="container">
+        <MainCard />
+      </div>
     </div>
   );
 }
