@@ -32,7 +32,7 @@ img {
 .main-card {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   background-color: hsl(246, 80%, 60%);
   padding: 2em 0;
   border-radius: 10px;
@@ -40,13 +40,14 @@ img {
 }
 .main-card .avatar {
   width: 20%;
+  padding-right: 1em;
 }
 .main-card .avatar img {
   border: 2px solid #fff;
   border-radius: 100px;
 }
 .main-card .avatar-text {
-  width: 70%;
+  width: 55%;
   text-align: left;
 }
 .main-card .avatar-text p {
@@ -67,6 +68,4 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  font-family: 400;
-  color: #fff;
 }
