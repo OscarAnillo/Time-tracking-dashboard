@@ -1,7 +1,7 @@
+import MainCard from './components/main-card';
+import InfoCards from './components/info-cards';
 
 import './App.css';
-import InfoCards from './components/info-cards';
-import MainCard from './components/main-card';
 
 function App() {
   return (

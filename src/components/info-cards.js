@@ -6,8 +6,12 @@ export default function InfoCards(){
     const [weekly, setWeekly] = useState('');
     const [monthly, setMonthly] = useState('');
 
+    useEffect(() => {
+
+    }, []);
+
     return (
-        <div>
+        <div className='cards-desktop'>
             {data.map(item => (
                 <div className={`${item.className} cards`} key={item.title}>
                     <div className="cards-bg">
@@ -19,7 +23,7 @@ export default function InfoCards(){
                             <p className='current'>{item.timeframes.daily.current}hrs</p>
                         </div>
                         <div>
-                            <img src="images/icon-ellipsis.svg" alt="" />
+                            <img src="images/icon-ellipsis.svg" alt="" className='img-mobile'/>
                             <p className='previous'>Last Week - {item.timeframes.daily.previous}hrs</p>
                         </div>
                     </div>
