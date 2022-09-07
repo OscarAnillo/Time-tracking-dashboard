@@ -9,7 +9,7 @@
 
 .App {
   text-align: center;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
   background: hsl(226, 43%, 10%);
   font-family: 'Rubik', sans-serif;
@@ -20,7 +20,7 @@
   padding: 75px 0;
 }
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 /* MainCard component */
@@ -74,4 +74,53 @@ img {
 }
 .main-nav ul li:active {
   color: #fff;
+}
+
+/* InfoCards components */
+.cards {
+  margin: 2em 0;
+  position: relative;
+  border-radius: 10px;
+  
+}
+.cards-bg {
+  height: 40px;
+  text-align: right;
+  overflow: hidden;
+  position: relative;
+}
+.cards-bg img {
+  width: 80px;
+  padding-right: 1em;
+  position: absolute;
+  top: -10px;
+  right: 0px;
+}
+.cards-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(29, 32, 75  );
+  color: #fff;
+  border-radius: 10px;
+  height: 120px;
+}
+
+.work {
+  background-color: rgb(255, 139, 100);
+}
+.play {
+  background-color: rgb(86, 194, 230);
+}
+.study {
+  background-color: rgb(255, 94, 125);
+}
+.exercise {
+  background-color: rgb(75, 207, 131);
+}
+.social {
+  background-color: rgb(114, 53, 209);
+}
+.self-care {
+  background-color: rgb(241, 199, 91);
 }
