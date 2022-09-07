@@ -16,11 +16,11 @@ export default function InfoCards(){
                     <div className="cards-row">
                         <div>
                             <h3>{item.title}</h3>
-                            <p>{item.timeframes.daily.current}hrs</p>
+                            <p className='current'>{item.timeframes.daily.current}hrs</p>
                         </div>
                         <div>
                             <img src="images/icon-ellipsis.svg" alt="" />
-                            <p>Last Week - {item.timeframes.daily.previous}hrs</p>
+                            <p className='previous'>Last Week - {item.timeframes.daily.previous}hrs</p>
                         </div>
                     </div>
                 </div>

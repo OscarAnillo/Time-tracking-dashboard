@@ -78,7 +78,7 @@ img {
 
 /* InfoCards components */
 .cards {
-  margin: 2em 0;
+  margin: 1.5em 0;
   position: relative;
   border-radius: 10px;
   
@@ -99,11 +99,25 @@ img {
 .cards-row {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: rgb(29, 32, 75  );
   color: #fff;
   border-radius: 10px;
-  height: 120px;
+  padding: 1.9em 1em;
+}
+
+.cards-row h3 {
+  font-weight: 400;
+}
+.cards-row .current {
+  font-size: 35px;
+  font-weight: 300;
+}
+.cards-row > div:nth-child(2) {
+  text-align: right;
+}
+.cards-row .previous {
+  color: rgb(136, 139, 184);
 }
 
 .work {
