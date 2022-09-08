@@ -1,14 +1,28 @@
 import MainCard from './components/main-card';
-import InfoCards from './components/info-cards';
+import InfoCardsDaily from './components/info-cards-daily';
+import InfoCardsWeekly from './components/info-cards-weekly';
+import InfoCardsMonthly from './components/info-cards-monthly';
+
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
 
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <div className="container">
+        <div className="container">
+        <BrowserRouter>
         <MainCard />
-        <InfoCards />
+          <Routes>
+            <Route path='/daily' element={<InfoCardsDaily />} />
+            <Route path='/weekly' element={<InfoCardsWeekly />} />
+            <Route path='/monthly' element={<InfoCardsMonthly />} />
+          </Routes>
+        </BrowserRouter>
       </div>
     </div>
   );

@@ -69,10 +69,14 @@ img {
   align-items: center;
   justify-content: space-around;
 }
-.main-nav ul li {
+.main-nav ul li a {
   color: hsl(235, 45%, 61%);
 }
-.main-nav ul li:active {
+.main-nav ul li a:active {
+  color: #fff;
+}
+
+.main-nav ul li a:hover {
   color: #fff;
 }
 
