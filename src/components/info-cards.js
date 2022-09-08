@@ -1,15 +1,6 @@
-import { useState, useEffect } from 'react';
 import data from '../data/data.json';
 
 export default function InfoCards(){
-    const [daily, setDaily] = useState('');
-    const [weekly, setWeekly] = useState('');
-    const [monthly, setMonthly] = useState('');
-
-    useEffect(() => {
-
-    }, []);
-
     return (
         <div className='cards-desktop'>
             {data.map(item => (
