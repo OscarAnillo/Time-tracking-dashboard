@@ -7,6 +7,7 @@ import {
   BrowserRouter,
   Routes,
   Route,
+  Navigate
 } from "react-router-dom";
 
 import './App.css';
@@ -21,6 +22,8 @@ function App() {
             <Route path='/daily' element={<InfoCardsDaily />} />
             <Route path='/weekly' element={<InfoCardsWeekly />} />
             <Route path='/monthly' element={<InfoCardsMonthly />} />
+            <Route path="*" element={<Navigate to="/daily" replace />}
+    />
           </Routes>
         </BrowserRouter>
       </div>
