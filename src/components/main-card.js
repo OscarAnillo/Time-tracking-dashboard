@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export default function MainCard(){
     return (
         <section className="section-card">
@@ -12,9 +14,9 @@ export default function MainCard(){
             </div>
             <nav className="main-nav">
                 <ul>
-                    <li>Daily</li>
-                    <li>Weekly</li>
-                    <li>Monthly</li>
+                    <li><Link to="/daily">Daily</Link></li>
+                    <li><Link to="/weekly">Weekly</Link></li>
+                    <li><Link to="/monthly">Monthly</Link></li>
                 </ul>
             </nav>
         </section>
