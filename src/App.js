@@ -22,8 +22,7 @@ function App() {
             <Route path='/daily' element={<InfoCardsDaily />} />
             <Route path='/weekly' element={<InfoCardsWeekly />} />
             <Route path='/monthly' element={<InfoCardsMonthly />} />
-            <Route path="*" element={<Navigate to="/daily" replace />}
-    />
+            <Route path="*" element={<Navigate to="/daily" replace />} />
           </Routes>
         </BrowserRouter>
       </div>
