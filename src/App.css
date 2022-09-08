@@ -1,8 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
 * {
   margin: 0;
   padding: 0;
+  list-style: none;
+  text-decoration: none;
 }
 
 .App {
   text-align: center;
+  min-height: 100vh;
+  position: relative;
+  background: hsl(226, 43%, 10%);
+  font-family: 'Rubik', sans-serif;
+}
+.container {
+  width: 90%;
+  margin: auto;
+  padding: 75px 0;
+}
+img {
+  max-width: 100%;
+}
+
+/* MainCard component */
+.section-card {
+ background-color: hsl(235, 46%, 20%); 
+ border-radius: 10px;
+}
+
+.main-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(246, 80%, 60%);
+  padding: 2em 0;
+  border-radius: 10px;
+  z-index: 2;
+}
+.main-card .avatar {
+  width: 20%;
+  padding-right: 1em;
+}
+.main-card .avatar img {
+  border: 2px solid #fff;
+  border-radius: 100px;
+}
+.main-card .avatar-text {
+  width: 55%;
+  text-align: left;
+}
+.main-card .avatar-text p {
+  color: rgb(162, 151, 255);
+  font-weight: 300;
+}
+.main-card .avatar-text h1 {
+  color: hsl(236, 100%, 87%);
+  font-weight: 300;
+}
+
+.section-card .main-nav {
+  background-color: hsl(235, 46%, 20%);
+  padding: 1.5em 0;
+  border-radius: 10px;
+}
+.main-nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.main-nav ul li {
+  color: hsl(235, 45%, 61%);
+}
+.main-nav ul li:active {
+  color: #fff;
+}
+
+/* InfoCards components */
+.cards {
+  margin: 1.5em 0;
+  position: relative;
+  border-radius: 10px;
+  
+}
+.cards-bg {
+  height: 40px;
+  text-align: right;
+  overflow: hidden;
+  position: relative;
+}
+.cards-bg img {
+  width: 80px;
+  padding-right: 1em;
+  position: absolute;
+  top: -10px;
+  right: 0px;
+}
+.cards-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(29, 32, 75  );
+  color: #fff;
+  border-radius: 10px;
+  padding: 1.9em 1em;
+}
+
+.cards-row h3 {
+  font-weight: 400;
+}
+.cards-row .current {
+  font-size: 35px;
+  font-weight: 300;
+}
+.cards-row > div:nth-child(2) {
+  text-align: right;
+}
+.cards-row .previous {
+  color: rgb(136, 139, 184);
+}
+
+.work {
+  background-color: rgb(255, 139, 100);
+}
+.play {
+  background-color: rgb(86, 194, 230);
+}
+.study {
+  background-color: rgb(255, 94, 125);
+}
+.exercise {
+  background-color: rgb(75, 207, 131);
+}
+.social {
+  background-color: rgb(114, 53, 209);
+}
+.self-care {
+  background-color: rgb(241, 199, 91);
+}
+
+@media(min-width: 768px) {
+  .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    max-width: 1044px;
+    margin: auto;
+    padding: 0px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* MainCard component */
+  .section-card {
+   width: 480px;
+   margin-right: 1em;
+  }
+  .main-card {
+    display: block;
+    background-color: hsl(246, 80%, 60%);
+    padding: 2.5em 1em;
+  }
+  .main-card .avatar {
+    width: 30%;
+    padding-right: 0px;
+    padding-bottom: 2em;
+  }
+  .main-card .avatar-text {
+    width: 60%;
+    text-align: left;
+  }
+  .main-card .avatar-text h1 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: #fff;
+    padding-bottom: 1.4em;
+  }
+  
+  .section-card .main-nav {
+    padding: 1em;
+  }
+  .main-nav ul {
+    display: block;
+    text-align: left;
+  }
+  .main-nav ul li {
+    margin: 1em 0;
+  }
+  .main-nav ul li:active {
+    color: #fff;
+  }
+  
+  /* InfoCards components */
+  .cards-desktop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .cards-desktop > div {
+    width: 245px;
+  }
+  .cards {
+    margin: 0 0 1em 0;
+    position: relative;
+    border-radius: 10px;
+    
+  }
+  .cards-bg {
+    height: 40px;
+    text-align: right;
+    overflow: hidden;
+    position: relative;
+  }
+  .cards-bg img {
+    width: 80px;
+    padding-right: 1em;
+    position: absolute;
+    top: -10px;
+    right: 0px;
+  }
+  .cards-row {
+    display: block;
+    text-align: left;
+    padding: 1.9em 1em;
+  }
+  
+  .cards-row h3 {
+    font-weight: 400;
+    padding-bottom: 1em;
+  }
+  .cards-row .current {
+    font-size: 65px;
+  }
+  .cards-row > div:nth-child(2) {
+    text-align: left;
+  }
+  .cards-row .img-mobile {
+    display: none;
+  }
+  .cards-row .previous {
+    color: rgb(136, 139, 184);
+    padding-bottom: .5em;
+  }
 }

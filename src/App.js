@@ -1,11 +1,15 @@
+import MainCard from './components/main-card';
+import InfoCards from './components/info-cards';
 
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-     <h1>Oscar Anillo</h1>
-     <p>Web UI Developer</p>
+      <div className="container">
+        <MainCard />
+        <InfoCards />
+      </div>
     </div>
   );
 }
