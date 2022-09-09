@@ -5,13 +5,13 @@ import data from '../data/data.json';
 export default function InfoCardsMonthly(){
     useEffect(() => {
         gsap.fromTo('.cards', {
-            x: 100,
+            y: -100,
             stagger: 0.1,
             opacity: 0,
             duration: 1,
             ease: 'expo'
         }, {
-            x: 0,
+            y: 0,
             stagger: 0.1,
             opacity: 1,
             duration: 1,
