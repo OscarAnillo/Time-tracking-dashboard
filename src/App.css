@@ -157,6 +157,7 @@ img {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    width: 90%;
     max-width: 1044px;
     margin: auto;
     padding: 0px;
@@ -235,9 +236,19 @@ img {
     right: 0px;
   }
   .cards-row {
-    display: block;
-    text-align: left;
-    padding: 1.9em 1em;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .cards-row > div {
+    width: 50%;
+  }
+  .cards-row > div:nth-child(3){
+    width: 100%;
+  }
+  .cards-row > div:nth-child(4){
+    width: 100%;
   }
   
   .cards-row h3 {
@@ -248,13 +259,11 @@ img {
     font-size: 65px;
   }
   .cards-row > div:nth-child(2) {
-    text-align: left;
-  }
-  .cards-row .img-mobile {
-    display: none;
+    text-align: right;
   }
   .cards-row .previous {
     color: rgb(136, 139, 184);
     padding-bottom: .5em;
+    text-align: left;
   }
 }
