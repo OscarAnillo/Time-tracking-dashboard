@@ -29,10 +29,14 @@ export default function InfoCardsDaily(){
                     <div className="cards-row">
                         <div>
                             <h3>{item.title}</h3>
-                            <p className='current'>{item.timeframes.daily.current}hrs</p>
                         </div>
                         <div>
                             <img src="images/icon-ellipsis.svg" alt="" className='img-mobile'/>
+                        </div>    
+                        <div>
+                            <p className='current'>{item.timeframes.daily.current}hrs</p>
+                        </div>
+                        <div>
                             <p className='previous'>Last Week - {item.timeframes.daily.previous}hrs</p>
                         </div>
                     </div>

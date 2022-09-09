@@ -105,10 +105,15 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
   background-color: rgb(29, 32, 75  );
   color: #fff;
   border-radius: 10px;
   padding: 1.9em 1em;
+}
+.cards-row div {
+  width: 49%;
+  text-align: left;
 }
 
 .cards-row h3 {
@@ -119,6 +124,9 @@ img {
   font-weight: 300;
 }
 .cards-row > div:nth-child(2) {
+  text-align: right;
+}
+.cards-row > div:nth-child(4) {
   text-align: right;
 }
 .cards-row .previous {
