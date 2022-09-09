@@ -6,13 +6,13 @@ import data from '../data/data.json';
 export default function InfoCardsWeekly(){
     useEffect(() => {
         gsap.fromTo('.cards', {
-            x: 200,
+            y: 200,
             stagger: 0.1,
             opacity: 0,
             duration: 1,
             ease: 'expo'
         }, {
-            x: 0,
+            y: 0,
             stagger: 0.1,
             opacity: 1,
             duration: 1,
@@ -30,10 +30,14 @@ export default function InfoCardsWeekly(){
                     <div className="cards-row">
                         <div>
                             <h3>{item.title}</h3>
-                            <p className='current'>{item.timeframes.weekly.current}hrs</p>
                         </div>
                         <div>
                             <img src="images/icon-ellipsis.svg" alt="" className='img-mobile'/>
+                        </div>    
+                        <div>
+                            <p className='current'>{item.timeframes.weekly.current}hrs</p>
+                        </div>
+                        <div>
                             <p className='previous'>Last Week - {item.timeframes.weekly.previous}hrs</p>
                         </div>
                     </div>
